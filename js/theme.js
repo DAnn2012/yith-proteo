@@ -180,10 +180,9 @@
 	});
 
 	// Avoid search closing when writing on form
-	$('#full-screen-search form > div').on('click', function (event) {
+	$('#full-screen-search form > div, #full-screen-search > .wp-block-yith-search-block').on('click', function (event) {
 		event.stopPropagation();
 	});
-
 
 	// Hide the Full Screen search when the user presses the escape key
 	$(document).on( 'keydown', function (event) {
